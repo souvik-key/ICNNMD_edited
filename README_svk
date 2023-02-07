@@ -2,7 +2,7 @@
 
 1. In genova: NVIDIA-SMI 440.31       Driver Version: 440.31       CUDA Version: 10.2
 
-2. Because Cuda Toolkit 11.2 minimum needs a driver version >= 450.80.02, only possible tensorflow-gpu was: tensorflow-2.3.0; Cudann:	7.6; cudatoolkit: 10.1
+Because Cuda Toolkit 11.2 minimum needs a driver version >= 450.80.02, only possible tensorflow-gpu was: tensorflow-2.3.0; Cudann:	7.6; cudatoolkit: 10.1
 conda install -c conda-forge cudatoolkit=10.1 cudnn=7.6.0
 3. However, tensorflow 2.3.0 requires numpy<1.19.0,>=1.16.0, but current mdtraj need numpy needs it > 1.2.0. So now it makes the choice difficult. May be we have to get back to cpu version of tensorflow. 
 
@@ -23,7 +23,6 @@ to 'main.py' to suppress the same warnings related to gpu usage
 
 9. multiple additions/edits are done for version based module deprecations
 
-10. pip install scikit-learn; lime
 
 11. if problem with libstd++.so.6 library, try adding "export LD_LIBRARY_PATH=/home/aakash/anaconda3/envs/py38/lib:$LD_LIBRARY_PATH" to the ~/.bashrc. 
 
